@@ -12,7 +12,6 @@ def root():
     infoDict = json.loads(info)
     imgSrc = infoDict['url']
     explanationText = infoDict['explanation']
-    dump(infoDict)
     return render_template("base.html", img = imgSrc, explanation = explanationText)
 
 if __name__ == '__main__':
