@@ -1,9 +1,19 @@
 <html>
-    <head>
-        <title>  NASA  Daily Pic </title>
-    </head>
-    <body>
-        <img src= {{img}}>
-        {{ explanation }}
-    </body>
+
+<head>
+    <title> Pick One </title>
+</head>
+
+<body>
+    <div style="text-align:center; display: block; margin: auto auto; ">
+        <h2> Pick one!</h2>
+        <form action="/NASA" method="POST">
+            <input type="submit" value="NASA">
+        </form>
+        <form action="/hearthstone" method="POST">
+            <input type="submit" value="Hearthstone">
+        </form>
+    </div>
+</body>
+
 </html>
